@@ -59,4 +59,10 @@ describe('listver tests', () => {
       dep.should.include.keys('name', 'version');
     })
   });
+
+  it('invalid option value does not break library', () => {
+    const list = listver('string');
+    list.should.be.an('object');
+    Object.keys(list).should.have.length(3);
+  });
 })
