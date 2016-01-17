@@ -23,3 +23,6 @@ console.dir(list);
   lodash: '4.0.0'
 } */
 ```
+
+### Motivation
+We wanted a way to easily log which versions of our dependencies were being loaded on application startup, especially when dealing with packages outside the public npm registry. This small library will read the `package.json` of every direct dependency and return an object containing their versions.
