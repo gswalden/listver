@@ -1,0 +1,32 @@
+{
+  "name": "listver",
+  "version": "0.0.0",
+  "description": "List installed versions of package dependencies",
+  "main": "index.js",
+  "scripts": {
+    "preversion": "npm test",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gswalden/listver.git"
+  },
+  "author": "Greg Walden <hi@gsw.nyc>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "list-deps": "^0.2.2",
+    "load-module-pkg": "^0.1.0",
+    "lodash": "^4.0.0"
+  },
+  "keywords": [
+    "get",
+    "read",
+    "package.json",
+    "version",
+    "dependency"
+  ]
+}
